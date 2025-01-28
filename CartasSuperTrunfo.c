@@ -36,6 +36,8 @@ int main() {
 
     //Inicialização das variáveis inseridas;
 
+    printf("========= JOGO DE CARTAS SUPER TRUNFO =========\n"); //Banner do jogo super trunfo
+
     char estado[50] = "Brasil";
     char codigo[5] = "A01";
     char cidade[50] = "Brasilia";
@@ -43,6 +45,8 @@ int main() {
     float area = 5760.78;
     float PIB = 265.01;
     int pontos_turisticos = 32;
+    float densidade_populacional = populacao / area; //A densidade populacional será calculada automaticamente pelo quociente entre a população e a área da cidade
+    float PIB_per_Capita = populacao / PIB; //O pib per capita será calculado automaticamente pelo quociente entre a população e o PIB da cidade
 
     /* 
     Utiliza-se o valor de saída de dados (printf) para exibir informções na tela.
@@ -81,7 +85,9 @@ int main() {
     printf("Quantos pontos turísticos?\n");
     scanf("%d", &pontos_turisticos);
 
-    //Para exibir na tela as informações dos dados das cartas de entrada do usuário; 
+    //Para exibir na tela as informações dos dados das cartas de entrada do usuário;
+
+    //Para exibir apenas duas casas decimais depois da vírgula para variáveis do tipo float, utiliza-se .2 entre %f = %.2f
 
     printf("Nome do estado: %s\n", estado);
 
@@ -91,11 +97,15 @@ int main() {
 
     printf("O número da população é: %d habitantes \n", populacao);
 
-    printf("A área da cidade é: %f km² \n", area);
+    printf("A área da cidade é: %.2f km² \n", area);
 
-    printf("O PIB da cidade é: %f milhões de reais\n", PIB);
+    printf("O PIB da cidade é: %.2f milhões de reais\n", PIB);
 
     printf("O número de Pontos turísticos é: %d\n", pontos_turisticos);
+
+    printf("A densidade populacional é: %.2f habitantes/km² \n", densidade_populacional);
+
+    printf("O  PIB per Capita da cidade é: %.2f reais\n", PIB_per_Capita);
 
     
 
