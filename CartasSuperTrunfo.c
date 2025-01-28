@@ -34,23 +34,15 @@ int main() {
 
     // Variáveis para armazenar os dados das cartas;
 
-    char estado[50];
-    char codigo[5];
-    char cidade[50];
-    int populacao;
-    float area;
-    float PIB; 
-    int pontos_turisticos;
-
     //Inicialização das variáveis inseridas;
 
-    estado[50] = "Brasil";
-    codigo[5] = "A01";
-    cidade[50] = "SaoPaulo";
-    populacao = 12325000;
-    area = 1521.11;
-    PIB = 699.28;
-    pontos_turisticos = 50;
+    char estado[50] = "Brasil";
+    char codigo[5] = "A01";
+    char cidade[50] = "Brasilia";
+    int populacao = 2817381;
+    float area = 5760.78;
+    float PIB = 265.01;
+    int pontos_turisticos = 32;
 
     /* 
     Utiliza-se o valor de saída de dados (printf) para exibir informções na tela.
@@ -91,19 +83,19 @@ int main() {
 
     //Para exibir na tela as informações dos dados das cartas de entrada do usuário; 
 
-    printf("Estado: %s\n", estado);
+    printf("Nome do estado: %s\n", estado);
 
-    printf("Codigo: %s\n", codigo);
+    printf("Código do estado: %s\n", codigo);
 
-    printf("Cidade: %s\n", cidade);
+    printf("Nome da cidade: %s\n", cidade);
 
-    printf("População: %d\n", populacao);
+    printf("O número da população é: %d habitantes \n", populacao);
 
-    printf("Área em km²: %f\n", area);
+    printf("A área da cidade é: %f km² \n", area);
 
-    printf("PIB: %f\n", PIB);
+    printf("O PIB da cidade é: %f milhões de reais\n", PIB);
 
-    printf("Pontos turísticos: %d\n", pontos_turisticos);
+    printf("O número de Pontos turísticos é: %d\n", pontos_turisticos);
 
     
 
