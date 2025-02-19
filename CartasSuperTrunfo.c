@@ -86,13 +86,13 @@ int main() {
     printf("========= Insira as informações da primeira cidade =========\n");
 
     printf("Qual o primeiro estado?\n");
-    scanf("%s", &estado_1);
+    scanf("%s", estado_1);
 
     printf("Qual o código do primeiro estado?\n");
-    scanf("%s", &codigo_1);
+    scanf("%s", codigo_1);
 
     printf("Qual o nome da primeira cidade?\n");
-    scanf("%s", &cidade_1);
+    scanf("%s", cidade_1);
 
     printf("Qual o número da população da primeira cidade?\n");
     scanf("%d", &populacao_1);
@@ -111,13 +111,13 @@ int main() {
     printf("========= Insira as informações da segunda cidade =========\n");
 
     printf("Qual o segundo estado?\n");
-    scanf("%s", &estado_2);
+    scanf("%s", estado_2);
 
     printf("Qual o código do segundo estado?\n");
-    scanf("%s", &codigo_2);
+    scanf("%s", codigo_2);
 
     printf("Qual o nome da segunda cidade?\n");
-    scanf("%s", &cidade_2);
+    scanf("%s", cidade_2);
 
     printf("Qual o número da população da segunda cidade?\n");
     scanf("%d", &populacao_2);
