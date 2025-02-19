@@ -43,11 +43,6 @@ int main() {
     Unsigned int ou char; trabalha somente com valores positivos incluindo o zero
     Long, long long int ou double, long double para extensão do valor de armazenamento de um número
     Short int; para valores menores que 32767
-
-    Operadores Relacionais: 
-    Para fazer comparações entre valores das variáveis;
-    Determinar se um valor é verdadeiro = 1 ou falso = 0 de acordo com o tipo de operador relacional
-    a >= b, a <= b, a == b, a!= b;
     */
 
     char estado_1[50] = "Brasil";
@@ -66,7 +61,7 @@ int main() {
     char cidade_2[50] = "Lisboa";
     int populacao_2 = 567131;
     float area_2 = 100.05;
-    float PIB_2 = 522000000000.00; 
+    float PIB_2 = 522000000.00; 
     int pontos_turisticos_2 = 55;
     float densidade_populacional_2 = populacao_2 / area_2;
     float PIB_per_Capita_2 = PIB_2 / populacao_2;
@@ -189,7 +184,13 @@ int main() {
 
 
     printf("========= Comparação simples das propriedades de duas cidades =========\n");
+
     /*
+    Operadores Relacionais: 
+    Para fazer comparações entre valores das variáveis;
+    Determinar se um valor é verdadeiro = 1 ou falso = 0 de acordo com o tipo de operador relacional
+    a >= b, a <= b, a == b, a != b;
+    
     Se uma propriedade da cidade 1 for maior que a cidade 2, resultado = 1
 
     Se uma propriedade da cidade 1 for menor que a cidade 2, resultado = 0
@@ -215,9 +216,9 @@ int main() {
     
     printf("Comparação dos Super poderes: %d\n", Super_Poder_1 >= Super_Poder_2);
 
-    printf("========= Brasil 3 x 4 Portugal =========\n");
-    printf("========= A segunda cidade é a vencedora =========\n");
+    //Exibição do resultado da comparação simples;
 
+    printf("A cidade vencedora é %s\n", cidade_2);
     
 
     return 0;
