@@ -81,6 +81,8 @@ int main() {
     Utiliza-se & antes do nome da variável para entrar com os dados no scanf;
     */
 
+    //Para variáveis do tipo char de strings (%s), foi removido "&" antes do nome da variável (scanf);
+
     //Exemplo de entrada de uma carta;
 
     printf("========= Insira as informações da primeira cidade =========\n");
