@@ -48,7 +48,7 @@ int main() {
     char estado_1[50] = "Brasil";
     char codigo_1[5] = "A01";
     char cidade_1[50] = "Brasilia";
-    int populacao_1 = 2817381;
+    unsigned long int populacao_1 = 2817381;
     float area_1 = 5760.78;
     float PIB_1 = 265847334.00;
     int pontos_turisticos_1 = 32;
@@ -59,7 +59,7 @@ int main() {
     char estado_2[50] = "Portugal";
     char codigo_2[5] = "E01";
     char cidade_2[50] = "Lisboa";
-    int populacao_2 = 567131;
+    unsigned long int populacao_2 = 567131;
     float area_2 = 100.05;
     float PIB_2 = 522000000.00; 
     int pontos_turisticos_2 = 55;
@@ -83,6 +83,8 @@ int main() {
 
     //Para variáveis do tipo char de strings (%s), foi removido "&" antes do nome da variável (scanf);
 
+    //Para variável unsigned long int, utiliza-se %lu (scanf);
+
     //Exemplo de entrada de uma carta;
 
     printf("========= Insira as informações da primeira cidade =========\n");
@@ -97,7 +99,7 @@ int main() {
     scanf("%s", cidade_1);
 
     printf("Qual o número da população da primeira cidade?\n");
-    scanf("%d", &populacao_1);
+    scanf("%lu", &populacao_1);
 
     printf("Qual a área em km² da primeira cidade?\n");
     scanf("%f", &area_1);
@@ -122,7 +124,7 @@ int main() {
     scanf("%s", cidade_2);
 
     printf("Qual o número da população da segunda cidade?\n");
-    scanf("%d", &populacao_2);
+    scanf("%lu", &populacao_2);
 
     printf("Qual a área em km² da segunda cidade?\n");
     scanf("%f", &area_2);
@@ -145,7 +147,7 @@ int main() {
 
     printf("Nome da primeira cidade: %s\n", cidade_1);
 
-    printf("O número da população da primeira cidade é: %d habitantes \n", populacao_1);
+    printf("O número da população da primeira cidade é: %lu habitantes \n", populacao_1);
 
     printf("A área da primeira cidade é: %.2f km² \n", area_1);
 
@@ -169,7 +171,7 @@ int main() {
 
     printf("Nome da segunda cidade: %s\n", cidade_2);
 
-    printf("O número da população da segunda cidade é: %d habitantes \n", populacao_2);
+    printf("O número da população da segunda cidade é: %lu habitantes \n", populacao_2);
 
     printf("A área da segunda cidade é: %.2f km² \n", area_2);
 
